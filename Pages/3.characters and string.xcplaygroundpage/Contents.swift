@@ -24,7 +24,7 @@ var message : String = "Swift is modern programming language"
 //1.string comparison
 var str1 : String = "ahmed"
 var str2: String = "pakistan"
-var str3 : String = "ahmed"
+var str3 : String = "ahmed "
 print(str1==str2)
 print(str1 == str3)
 
