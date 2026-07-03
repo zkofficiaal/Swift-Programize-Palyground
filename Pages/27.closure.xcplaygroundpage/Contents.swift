@@ -44,6 +44,29 @@ func record (name: String, completion: (String) -> ()) {
     completion(name)
     print("ended")
 }
-record(name: "zahid") {
+record(name: "zahid") {_ in
     print("the best video")
 }
+
+
+
+func addItems(name: String, action: () -> () ) {
+    print("adding \(name) to shoping list...")
+    action()
+    print("ok")
+}
+addItems(name: "Milk") {
+    print("item added successfully")
+}
+print()
+
+
+// auot closure
+func display(greet: @autoclosure () -> ()) {
+ greet()
+}
+
+// pass closure without {}
+display(greet: print("Hello World!"))
+
+
