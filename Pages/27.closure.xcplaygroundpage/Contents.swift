@@ -65,8 +65,15 @@ print()
 func display(greet: @autoclosure () -> ()) {
  greet()
 }
-
 // pass closure without {}
 display(greet: print("Hello World!"))
 
 
+
+
+func greetingg (greet: @autoclosure () -> ()) {
+    print("before closure")
+    greet()
+    print("after closure")
+}
+greetingg(greet: print("hello zahid"))
