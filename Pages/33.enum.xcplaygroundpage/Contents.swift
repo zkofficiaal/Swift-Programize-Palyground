@@ -80,3 +80,77 @@ print(brand)
 // pass integer value to price
 var offer = Laptop.price(1599)
 print(offer)
+
+
+
+
+
+//enum with associated value (sometimes we may want to attach additional information to enum values. These additional information attached to enum values are called associated values.
+enum Distance {
+    case km(String)
+    case miles(String)
+}
+var dis1 = Distance.km("in matric system")
+print(dis1)
+var dis2 = Distance.miles("in imperial system")
+print(dis2)
+
+
+
+// multiple associative values
+enum Markks {
+
+ // associate multiple Double values
+case gpa(Double, Double, Double)
+
+// associate multiple String values
+case grade(String, String, String)
+}
+
+// pass three Double values to gpa
+var markks1 = Markks.gpa(3.6, 2.9, 3.8)
+print(markks1)
+
+// pass three string values to grade
+var markks2 = Markks.grade("A", "B", "C")// this associative values is also called touple
+print(markks2)
+
+
+
+
+
+
+
+// named associative values
+enum Pizza {
+    case small (inches : Int)
+    case medium (inches: Int)
+    case large (inches : Int)
+}
+var sizes = Pizza.small(inches: 7)
+print("Size of small size pizza is : \(sizes)")
+
+
+
+
+
+//enum Associated Values and Switch Statement
+enum Mercedes {
+
+ case sedan(height: Double)
+ case suv(height: Double)
+ case roadster(height: Double)
+}
+
+var choice = Mercedes.suv(height: 5.4)
+
+switch(choice) {
+ case let .sedan(height):
+   print("Height:", height)
+
+ case let .suv(height):
+   print("Height:", height)
+
+ case let .roadster(height):
+   print("Height:", height)
+}
