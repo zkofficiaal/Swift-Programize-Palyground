@@ -25,6 +25,7 @@ var salery = 100000
 var _year = 2020
 var _Year = 2025
 
+
 // constant
 let pi = 3.14
 let schoolName : String = "USTB"
