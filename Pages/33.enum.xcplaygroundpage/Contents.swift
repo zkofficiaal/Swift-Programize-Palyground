@@ -2,6 +2,81 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
+// enum: an enum (short for enumeration) is a user-defined data type that has a fixed set of related values.We use the enum keyword to create an enum.
+enum season {
+    case spring, summer, autumn, winter
+}
 
-//: [Next](@next)
+var currentSeason: season = .spring
+var CurrentSeaon = season.summer
+print("currnt season : \(CurrentSeaon)")
+
+
+
+// enum with switch statement
+enum PizzaSize {
+  case small, medium, large
+}
+
+var size = PizzaSize.medium
+
+switch(size) {
+  case .small:
+    print("I ordered a small size pizza.")
+
+  case .medium:
+    print("I ordered a medium size pizza.")
+
+   case .large:
+     print("I ordered a large size pizza.");
+}
+
+
+
+// iterate over an enum(In Swift, we use the CaseIterable protocol to iterate over an enum
+enum daysName : CaseIterable{
+    case Mon, Tue, Wed, Thu, Fri, Sat, Sun
+}
+for day in daysName.allCases {
+    print("")
+}
+
+
+
+
+
+
+// enum with raw values(assigning values to  the cases of enum
+enum Size : Int {
+  case small = 10
+  case medium = 12
+  case large = 14
+}
+
+// access raw value of python case
+var result = Size.small.rawValue
+print(result)
+
+
+
+
+
+
+// associative value with raw types(attach additional information to an enum case.)
+
+enum Laptop {
+
+  // associate string value
+  case name(String)
+
+  // associate integer value
+  case price (Int)
+}
+
+// pass string value to name
+var brand = Laptop.name("Razer")
+print(brand)
+
+// pass integer value to price
+var offer = Laptop.price(1599)
+print(offer)
