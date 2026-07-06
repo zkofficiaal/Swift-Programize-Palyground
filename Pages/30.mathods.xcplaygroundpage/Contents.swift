@@ -44,8 +44,8 @@ class culculator {
 
 var culculatorObj = culculator()
 
-culculator.add(num1: 10, num2: 20)
-culculatorObj.multiplication(num1: 12, num2: 8)
+culculator.add(num1: 10, num2: 20)// by class name
+culculatorObj.multiplication(num1: 12, num2: 8)// by obj name
 
 
 
@@ -255,7 +255,7 @@ print(empl2.name, empl2.salery)
 
 
 
-//In some cases initializers might or might not work, this is called a failable initializer.
+//An initializer that can return nil if initialization fails, declared with init?.
 class File {
 
   var folder: String
@@ -272,7 +272,6 @@ class File {
   }
 }
 
-// create folder1 object
 var file  = File(folder: "")
 if (file != nil) {
   print("File Found Successfully")
@@ -282,17 +281,38 @@ else {
 }
 
 
-// memberwise initializer
-struct Personp {
-
+// memberwise initializerA memberwise initializer is an auto-generated initializer for structs.Swift automatically creates it if you don’t define your own initializer.
+struct Persons {
     var name: String
     var age: Int
 }
 
-// object of Person with memberwise initializer values inside the parentheses () are automatically assigned to corresponding properties of the struct
-var person1 = Personp(name: "anit", age: 43)
+let p11 = Persons(name: "ronalod", age: 43)   // auto memberwise initializer
+print("Name: \(p11.name) Age: \(p11.age)")
 
-print("Name:", person1.name)
-print("Age:", person1.age)
+
+
+// deinitialization(Deinitialization is a process to deallocate class instances when they're no longer needed. This frees up the memory space occupied by the system.
+class Book {
+    var title: String
+
+    // initializer
+    init(title: String) {
+        self.title = title
+        print("Book '\(title)' created")
+    }
+
+    // deinitializer
+    deinit {
+        print("Book '\(title)' removed from memory")
+    }
+}
+
+var myBook: Book? = Book(title: "Swift Programming")
+
+// deallocate object
+myBook = nil
+
+
 
 

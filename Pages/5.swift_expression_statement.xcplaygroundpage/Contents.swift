@@ -16,7 +16,7 @@ print("hello zahid khan")
 
 //simple statement(one expression or declaration)
 var age = 57
-var isStudent: Bool = true
+var isStudent: Bool 
 
 //conditional statement(excute a block when condition become meet)
 let Age = 16
