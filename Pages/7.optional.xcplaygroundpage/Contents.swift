@@ -25,12 +25,12 @@ print(price!)
 // ecplicitly declaring an unwrap optional
 let price1 : Int! = 200
 print(price1)
+print(price1!)
 
 
 
-//how to handle
-/*var someValue:Int!
- var unwrappedValue:Int = someValue //crashes due to this line*/
+
+
 
 
 // optional handling
@@ -65,14 +65,14 @@ if let mynum = num {
 
 // guard statement
 func testFuncion(){
-    let score : Int? = 56
+    let score : Int? = nil
     guard let scoreValue = score else{
         print("no value")
         return
     }
     print("the score is \(scoreValue)")
 }
-testFuncion()
+
 
 
 
@@ -99,8 +99,8 @@ showResult(marks: 3.67)
 
 
 // nil coalescing operator(a??b means if a is nill then return b
-let Price : Int! = 56000
+let discountPrice : Int! = 56000
 let defaulttprice = 60000
-let myprice = price ?? defaulttprice
-print("Prece for me ; \(myprice)")
+let myprice = discountPrice ?? defaulttprice
+print("Prece for me ; \(discountPrice!)")
 

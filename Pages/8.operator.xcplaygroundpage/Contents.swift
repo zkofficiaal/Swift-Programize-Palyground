@@ -55,18 +55,18 @@ print(!(d > e))
 
 
 
-//bitwise operator(binary)
+//bitwise operator(Bitwise operators work directly on the binary representation of integers.)
 let aa = 6   // 110 in binary
 let bb = 3   // 011 in binary
 print(aa & bb)   // 2 , binary and
 print(aa | bb)   // 7 , or
 print(aa ^ bb)   // 5 , xor
 print(~aa)      // -7 , compliment
-print(aa << 1)  // 12
-print(aa >> 1)  // 3
+print(aa << 1)  // 12 left shift
+print(aa >> 1)  // 3 right shipt
 
 
-// ternary opertor
+// ternary opertor(shortcut of if else
 a > 5 ? print("a is greater than 5") : print("a is less than 5")
 aa < 4 ? print("aa is less then 4") : print("greater than")
 

@@ -254,7 +254,7 @@ print(empl2.name, empl2.salery)
 
 
 
-
+// failed initializer
 //An initializer that can return nil if initialization fails, declared with init?.
 class File {
 

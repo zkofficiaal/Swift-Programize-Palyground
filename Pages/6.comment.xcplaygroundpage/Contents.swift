@@ -2,7 +2,7 @@
 
 import Foundation
 
-// comments
+// comments (comments are hints that we use to make our code more understandable.
 let name :String = "John" //initialization of variable name
 
 //single line comment(//)

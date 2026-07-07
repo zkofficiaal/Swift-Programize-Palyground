@@ -2,7 +2,7 @@
 
 import Foundation
 
-// swift expression
+// swift expression (An expression is a combination of variables, operators, literals, and functions.
 var salery = 10000
 print(salery)
 
@@ -11,7 +11,7 @@ let num2 = 67
 print(num1 == num2)
 
 
-// statement
+// statement(Statements are instructions to perform a specific task
 print("hello zahid khan")
 
 //simple statement(one expression or declaration)

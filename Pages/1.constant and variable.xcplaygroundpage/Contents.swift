@@ -59,3 +59,28 @@ let someString : String = "Swift code by Z.K"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+struct Point {
+    var x: Int
+    var y: Int
+}
+
+var p1 = Point(x: 10, y: 20)
+var p2 = p1   // copy
+p2.x = 30
+
+print(p1.x) // 10 (unchanged)
+print(p2.x) // 30
+print(p1.x)

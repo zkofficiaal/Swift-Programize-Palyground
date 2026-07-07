@@ -2,7 +2,7 @@
 
 import Foundation
 
-var greeting = "Welocme to swift character ad string"
+var greeting = "Welocme to swift character and string"
 
 //character type
 var character : Character

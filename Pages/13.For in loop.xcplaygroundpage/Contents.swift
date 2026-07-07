@@ -7,7 +7,7 @@ for name in names {
 
 
 
-// using of where clause in for in loop
+// using of where  in for in loop
 let oddNumbers = [ 1, 2, 3, 5, 7, 9, 11]
 
 for number in oddNumbers where number != 2 {

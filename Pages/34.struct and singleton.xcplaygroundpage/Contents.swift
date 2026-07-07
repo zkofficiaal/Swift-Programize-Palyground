@@ -74,59 +74,25 @@ car1.applyBrake()
 
 
 // singleton(A singleton is just a special class that allows only one object to be created.
-//class FileManager {
-//    // create one shared object
-//    static let shared = FileManager()
-//    
-//    // stop others from making new objects
-//    private init() { }
-//    
-//    // example method
-//    func checkFileAccess(user: String) {
-//        if user == "@programiz.com" {
-//            print("Access Granted")
-//        } else {
-//            print("Access Denied")
-//        }
-//    }
-//}
-//
-//// usage
-//let file = FileManager.shared
-//file.checkFileAccess(user: "@programiz.com")
+final class FileManager : Sendable {
 
+    // create a singleton instance
+    static let fileObj = FileManager()
 
+    // private initializer prevents external instantiation
+    private init() { }
 
-
-
-class FileManager{
-
- // create a singleton
- static let fileObj = FileManager()
-
- // create a private initializer
-private init() {
-  
+    // method to request file access
+    func checkFileAccess(user: String) {
+        if user == "@programiz.com" {
+            print("Access Granted")
+        } else {
+            print("Access Denied")
+        }
+    }
 }
 
- // method to request file
-func checkFileAccess(user: String) {
-
-  // condition to check username
-  if user == ("@programiz.com") {
-
-    print("Access Granted")
-  }
-
-  else {
-    print(" Access Denied")
-  }
-}
-}
-
+// usage
 let userName = "@programiz.com"
-
-// access method
-let file = FileManager.fileObj
-
+let file = FileManager.fileObj   // access singleton instance
 file.checkFileAccess(user: userName)

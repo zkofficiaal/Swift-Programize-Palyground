@@ -2,7 +2,9 @@
 
 import Foundation
 
-// break statement
+// break statement (The break statement is used to terminate the loop immediately when it is encountered.
+
+
 for i in 1...5 {
   
   if i == 3 {

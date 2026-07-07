@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
 import Foundation
-// declare a function
+// declare a function (A function is a block of code that performs a specific task.It can take inputs (parameters), process them, and optionally return an output (result).
 func greet() {
   print("Hello World!")
 }
